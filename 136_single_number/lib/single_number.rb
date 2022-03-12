@@ -14,7 +14,6 @@ require 'pry'
 def single_number(nums)
   first = nums.first
   nums[1..-1].each do |n|
-    require 'pry'; binding.pry
     first ^= n
   end
   first

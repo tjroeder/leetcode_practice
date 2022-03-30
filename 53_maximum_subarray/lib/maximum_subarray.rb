@@ -11,5 +11,5 @@ def max_sub_array(nums)
     curr_sum = [curr_sum + nums[i], nums[i]].max
     max_sum = [max_sum, curr_sum].max
   end
-  return max_sum
+  max_sum
 end

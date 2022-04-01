@@ -5,7 +5,7 @@ require 'pry'
 def contains_duplicate(nums)
   verified = {}
 
-  nums.each do |i|
+  0.upto(nums.length - 1) do |i|
     return true if verified[i] == i
     verified[i] = i
   end
